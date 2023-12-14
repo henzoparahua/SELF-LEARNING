@@ -1,9 +1,9 @@
 #include <iostream>
 
 int main (){
-    // long used for a bigger value than int supports
-    // short is used to determine that we need a value not so big as a integer
-    // unsigned is only used for non-negative values
+    // long used for a bigger value than int supports short 
+    // is used to determine that we need a value not so big 
+    // as a integer unsigned is only used for non-negative values
 
     short int counter;
     /*it uses less bits than a standart int*/
@@ -32,10 +32,6 @@ int main (){
     unsigned short int lambs;
     unsigned short lambs_two;
 
-    /* it is well known that long and short cannot 
-     be used together as it affects the same thing
-     if you try this, you may reconsider your 
-     decision of being a programmer.
-    */
-
+ 
+        
 }
