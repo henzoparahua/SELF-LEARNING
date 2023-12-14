@@ -22,6 +22,8 @@ int main()
 	double b = 0.2;
 	double c = 0.3;
 
-	if(a + b != c)
+    // if you get the cout, you are facing what is called numerical annomaly.
+	if(a + b != c) {
 		cout << "Your computer is out of order";
+    }
 }
