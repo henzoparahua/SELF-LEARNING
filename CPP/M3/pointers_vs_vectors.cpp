@@ -15,4 +15,5 @@ int main (){
     ptr2 = ptr2+1; // or 2 
     std::cout << *ptr2 << "\n";
     std::cout << (ptr == ptr2) << std::endl;
+    
 }
