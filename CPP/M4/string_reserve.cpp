@@ -16,8 +16,10 @@ void info(string& s){
 int main (){
     string str = "content";
     info(str);
+    
     str.reserve(100);
     info(str);
+
     str.reserve(0);
     info(str);
 }
