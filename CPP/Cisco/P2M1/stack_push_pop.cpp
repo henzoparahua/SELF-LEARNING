@@ -2,20 +2,15 @@
 
 using namespace std;
 
-class Stack{
-    private:
-        int stackstore[100];
-        int SP;
-    public:
-        void push(int value);
-        int pop(){
-            return stackstore[--SP];
-        }
-};
-void Stack::push(int value){
-    stackstore[SP++] = value;
-}
+int stack[100];
+int SP =0;
 
+void push(int value){
+    stack[SP++] = value;
+}
+int pop(){
+    return stack[--SP];
+}
 int main(){
     push(3);
     push(2);
