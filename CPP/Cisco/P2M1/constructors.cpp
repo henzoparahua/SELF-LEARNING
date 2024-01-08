@@ -26,6 +26,7 @@ private:
 
 };
 
+
 int main (){
     Class object;
     // you are not allowed to do the following things:
