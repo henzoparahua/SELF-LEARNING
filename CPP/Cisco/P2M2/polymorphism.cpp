@@ -33,6 +33,10 @@ public:
     virtual void miado_infernal(){
         cout << "MEEEEEEEEEEEEEEEEEOWN"<<endl;
     }
+    void latir_and_miar(){
+        latido_chato();
+        miado_infernal();
+    }
 };
 class Minmim : public Pet {
 public:
@@ -61,5 +65,5 @@ int main() {
     a_pet2 -> miado_infernal();
     a_dog -> miado_infernal();
     static_cast<Pet *>(a_dog) -> miado_infernal();
-    
+    a_cat-> latir_and_miar();
 }
