@@ -75,6 +75,15 @@ void play_with_pet(Pet *pet)
 // we make use of the converted pointer stored in the mamute variable, otherwise, nothing 
 // would happen.
 //
+
+// So, what happened?
+// the main function invokes the play_with_pet in a slightly different way
+// the form of the dynamic_cast utilization takes the following form:
+// dynamic_cast<pointer_type> (pointer_to_object)
+// and returns a newly transformed (converted) reference which result may be
+// used like an ordinary l-value (a value which can be put on the left side of = operator)
+// we don't need to assign it to a variable if we want to make use of it; this is exactly
+// what we did inside the modified function.
 }
 
 int main()
