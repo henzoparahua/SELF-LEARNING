@@ -24,6 +24,7 @@ public:
 };
 
 int main(){
-    A a = 1;
+// A a = 1;
+    A a(1);
     B b = 1;
 }
