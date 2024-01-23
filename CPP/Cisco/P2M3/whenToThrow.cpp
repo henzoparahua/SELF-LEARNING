@@ -50,20 +50,28 @@ using namespace std;
 //  is obsoleted. It's normal and expected. It's also the reason to restrain from
 //  using it in your programs
 
+//  So how its done nowadays?
+//  Newer compilers accepts completely differ syntax for te same purpose. A function
+//  which throws an exception (no matter which exactly) announces its intent using
+//  the following form:
+//  noexcept(false)
+//  noexcept(true)
+//  Or simply as noexcept
+
 
 class Class {
 public:
-	string msg;
-	Class(string txt) : msg(txt) {}
+    string msg;
+    Class(string txt) : msg(txt) {}
 };
 
-void thrower() throw(Class)
+void thrower() noexcept(false)
 {
     cout << "Thrower" << endl;
-	throw Class("object");
+    throw Class("object");
 }
 
-void putter() throw()
+void putter() noexcept(true)
 {
     cout << "Putter" << endl;
 }
@@ -75,6 +83,6 @@ int main()
         thrower();
     }
     catch(Class &exc) {
-	   cout << "Caught!" << endl;
+       cout << "Caught!" << endl;
     }
 }
