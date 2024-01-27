@@ -12,7 +12,7 @@
 //  class logic_error : public exception {
 //  public:
 //      explicit logic_error(const string& what_arg);
-//  }
+//  };
 //  exception <- logic_error
 
 //  --------------------------------------------------------------------------
@@ -28,7 +28,7 @@
 //  class domain_error : public logic_error {
 //  public:
 //      explicit domain_error (const string& what_arg);
-//  }
+//  };
 //  exception <- logic_error <- domain_error
 
 //  --------------------------------------------------------------------------
@@ -43,7 +43,7 @@
 //  class invalid_argument : public logic_error {
 //  public:
 //      explicit invalid_argument (const string& what_arg);
-//  }
+//  };
 //  exception <- logic_error <- invalid_argument
 
 //  --------------------------------------------------------------------------
@@ -58,7 +58,7 @@
 //  class lenght_error : public logic_error {
 //  public:
 //      explicit length_error(const string& what_arg);
-//  }
+//  };
 //  exception <- logic_error <- length_error
 
 //  --------------------------------------------------------------------------
@@ -73,7 +73,7 @@
 //  class out_of_range : public logic_error {
 //  public:
 //      explicit out_of_range (const string& what_arg);    
-//  }
+//  };
 //  exception <- logic_error <- out_of_range
 
 //  --------------------------------------------------------------------------
@@ -89,5 +89,20 @@
 //  class runtime_error : public exception {
 //  public:
 //      explicit runtime_error (const string& what_arg);  
-//  }
+//  };
 //  exception <- runtime_error.
+
+//  --------------------------------------------------------------------------
+
+//  The Range Error Class
+//  The range error class is derived from the runtime_error class. It's designed to
+//  represent exceptions caused by obtaining computation results exceeding the 
+//  permissible range.
+//  Note the difference: an exception of this kind doesn't apply to arguments' values,
+//  but to the results obtained from valid arguments.
+
+//  class range_error : public runtime_error {
+//  public:
+//      explicit range_error (const string& what_arg);    
+//  };
+//  exception <- runtime_error <- range_error
