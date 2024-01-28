@@ -132,3 +132,11 @@
 //      explicit underflow_error (const string& what_arg);
 //  };
 //  exception <- runtime_error <- underflow_error
+
+//  --------------------------------------------------------------------------
+
+//  What next? The hierarchy we've just shown you may be used as a base to build
+//  your own structure, reflecting your specific needs and circumstances. You can
+//  extend the structure in any direction to make it deeper and/or wider if you want
+//  to define your own classes of exceptions, or to refine the existing classes to 
+//  make them more precise.
