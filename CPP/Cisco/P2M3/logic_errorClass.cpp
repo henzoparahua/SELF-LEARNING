@@ -106,3 +106,29 @@
 //      explicit range_error (const string& what_arg);    
 //  };
 //  exception <- runtime_error <- range_error
+
+//  --------------------------------------------------------------------------
+
+//  The Overflow Error Class
+//  The overlow_error class is derived from the runtime_error class. It's designed to
+//  represent exceptions caused by obstaining results too large to represent any useful
+//  value (in the domain sense).
+
+//  class overflow_error : public runtime_error {
+//  public:
+//      explicit overflow_error (const string& what_arg);
+//  };
+//  exception <- runtime_error <- overflow_error
+
+//  --------------------------------------------------------------------------
+
+//  The Underflow Error Class
+//  The underflow_error class is derived from the runtime error class. It's 
+//  designed to present exceptions caused bu obtaining results too small to 
+//  represent any useful value (in the domain sense).
+
+//  class underflow_error : public runtime_error {
+//  public:
+//      explicit underflow_error (const string& what_arg);
+//  };
+//  exception <- runtime_error <- underflow_error
